@@ -589,13 +589,8 @@ footer .info ul li:first-child img {
 
 footer .info ul li img {
 	margin-right: 4px;
-	filter: grayscale(1);
 	transition: filter .2s linear;
 	cursor: pointer;
-}
-
-footer .info ul li img:hover {
-	filter: grayscale(0);
 }
 
 footer .info ul li img:first-child {
