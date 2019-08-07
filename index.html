@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link rel="stylesheet" type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e72e859a9c.js"></script>
+		<link rel="stylesheet" href="public/css/style.css">
+		<title>OXUA - Beach</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+
+					<a class="logo" href="#home">
+						<img src="public/assets/images/logo.png" alt="">
+					</a>
+
+					<ul class="nav-tab">
+						<li>
+							<a href="#biquinis">BIQUÍNIS</a>
+							<ul class="drop-down">
+								<li><a href="#biquinis/cortinhas">Cortininhas</a></li>
+								<li><a href="#biquinis/croppeds">Croppeds</a></li>
+								<li><a href="#biquinis/tomara-que-caia">Tomara que caia</a></li>
+								<li><a href="#biquinis/lacinho">Lacinho</a></li>
+								<li><a href="#biquinis/calcinha-larguinha">Calcinha larguinha</a></li>
+								<li><a href="#biquinis/levanta-bumbum">Levanta bumbum</a></li>
+								<li><a href="#biquinis/trending">Trending</a></li>
+							</ul>
+						</li>
+						<li><a href="#maios">MAIÔS</a></li>
+						<li><a href="#bodies">BODIES</a></li>
+						<li><a href="#saidas">SAÍDAS</a></li>
+						<li><a href="#sale">SALE</a></li>
+					</ul>
+
+					<ul class="client-actions">
+						<li class="search">
+							<input type="checkbox" id="searchButton">
+							<label class="fas fa-search" aria-hidden="true" for="searchButton"></label>
+							<label class="fas fa-window-close" aria-hidden="true" for="searchButton"></label>
+							<div class="search-bar">
+								<div class="search-field">
+									<input type="text" placeholder="Digite aqui o que procura">
+									<button>
+										<i class="fas fa-search" aria-hidden="true"></i>
+									</button>
+								</div>
+
+							</div>
+						</li>
+						<li class="login">
+							<i class="far fa-user"></i>
+						</li>
+						<li class="cart">
+							<span>02</span>
+							<label class="fas fa-shopping-cart" aria-hidden="true" for="cartButton"></label>
+							<input type="checkbox" id="cartButton">
+							<div class="cart-list">
+								<table>
+									<tbody>
+										<tr>
+											<th>PRODUTO</th>
+											<th>PREÇO</th>
+											<th>QTD</th>
+											<th>REMOVER</th>
+										</tr>
+										<tr>
+											<td class="product">
+												<span style="display: flex;align-items: center">
+													<img src="public/assets/images/biquini-04.png">
+													<p>Biquíni Cortiniha Palmeira</p>
+												</span>
+											</td>
+											<td class="price">R$ 129,90</td>
+											<td class="amount">01</td>
+											<td class="remove"><i class="fas fa-times"></i></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="cart-list-footer">
+									<div>
+										<span>TOTAL</span>
+										<span>R$ 129,90</span>
+									</div>
+									<button>FINALIZAR PEDIDO</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</nav>
+			</header>
+
+			<main>
+
+				<div class="carousel">
+					<div class="image-slide">
+						<div class="advertising">
+							<p>O VERÃO CHEGOU COM NOVIDADES</p>
+							<a href="#novidades">VER PRODUTOS</a>
+						</div>
+					</div>
+					<div class="image-slide">
+						<div class="advertising">
+							<p>O VERÃO CHEGOU COM NOVIDADES2</p>
+							<a href="#novidades">VER PRODUTOS2</a>
+						</div>
+					</div>
+					<div class="image-slide">
+						<div class="advertising">
+							<p>O VERÃO CHEGOU COM NOVIDADES3</p>
+							<a href="#novidades">VER PRODUTOS3</a>
+						</div>
+					</div>
+				</div>
+
+				<ul id="categories">
+					<li>
+						<img src="public/assets/images/sport.png">
+						<div>
+							<h1>SPORT</h1>
+							<a href="#products/sport">VER PRODUTOS</a>
+						</div>
+					</li>
+					<li>
+						<img src="public/assets/images/bodies.png">
+						<div>
+							<h1>BODIES</h1>
+							<a href="#products/bodies">VER PRODUTOS</a>
+						</div>
+					</li>
+					<li>
+						<img src="public/assets/images/biquinis.png">
+						<div>
+							<h1>BIQUÍNIS</h1>
+							<a href="#products/biquinis">VER PRODUTOS</a>
+						</div>
+					</li>
+				</ul>
+
+				<div class="last-fashion">
+					<div class="advertising">
+						<p>COLEÇÃO VERÃO 18/19</p>
+						<a href="#novidades">CONFIRA</a>
+					</div>
+					<div id="biquinis">
+						<div>
+							<img src="public/assets/images/biquini-01.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+						<div>
+							<img src="public/assets/images/biquini-02.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+						<div>
+							<img src="public/assets/images/biquini-03.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+						<div>
+							<img src="public/assets/images/biquini-04.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+						<div>
+							<img src="public/assets/images/biquini-05.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+						<div>
+							<img src="public/assets/images/biquini-01.png" alt="" class="front">
+							<img alt="" class="back" src="public/assets/images/biquini-back.png">
+							<span>Biquíni contininha palmeira</span>
+							<span>R$ 129, 90</span>
+							<button class="buy">COMPRAR</button>
+						</div>
+
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<ul class="promotions">
+					<li>
+						<span>FRETE GRÁTIS</span> nas compras acima de R$500
+					</li>
+					<li>
+						<span>7 DIAS</span> para devolução
+					</li>
+					<li>
+						<span>3X SEM JUROS</span> parcele no cartão de crédito
+					</li>
+				</ul>
+				<ul class="footer-nav">
+					<li>
+						<ul>
+							<li><a href="#about">Sobre Nós</a></li>
+							<li><a href="#contact">Fale Conosco</a></li>
+							<li><a href="#atacado">Atacado</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="#faq">Dúvidas Frequêntes</a></li>
+							<li><a href="#entregas-e-prazos">Entregas e Prazos</a></li>
+							<li><a href="#trocas-e-devolucoes">Trocas e Devoluções</a></li>
+							<li><a href="#policy">Políticas de Privacidade</a></li>
+							<li><a href="#orders-method">Formas de Pagamento</a></li>
+							<li><a href="#metrics">Tabelas de Medidas</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="#login">Entrar</a></li>
+							<li><a href="#account">Minha Conta</a></li>
+							<li><a href="#cart">Meus Pedidos</a></li>
+							<li><a href="#ca">Central de Atendimento</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="#biquinies">Biquínis</a></li>
+							<li><a href="#maios">Maiôs</a></li>
+							<li><a href="#bodies">Bodies</a></li>
+							<li><a href="#saidas">Saídas</a></li>
+						</ul>
+					</li>
+					<li>
+						<span><strong>NEW</strong> Receba promoções e novidades</span>
+						<form>
+							<span class="style-email-input">
+								<input type="email" placeholder="john@exemple.com"></input>
+								<button type="submit"><i class="fas fa-angle-right"></i></button>
+							</span>
+						</form>
+					</li>
+					<li>
+						<i class="fab fa-instagram"></i>
+					</li>
+				</ul>
+				<div class="info">
+					<ul>
+						<li>
+							<img src="public/assets/images/only-logo.png" alt="" class="only-logo">
+							<p>
+								<span>CNPJ 23.104.344/000-46 Avenida São Paulo</span>
+								<span>1547 Zona 02 - Salas 1 e 2 Cianorte - PR</span>
+							</p>
+						</li>
+						<li>
+							FORMAS DE PAGAMENTO
+							<img src="public/assets/images/visa.png" alt="">
+							<img src="public/assets/images/mastercard.png" alt="">
+							<img src="public/assets/images/amex.png" alt="">
+							<img src="public/assets/images/diners.png" alt="">
+							<img src="public/assets/images/mastercard.png" alt="">
+							<img src="public/assets/images/boleto.png" alt="">
+						</li>
+						<li>
+							SEGURANÇA
+							<img src="public/assets/images/flag-ebit.png" alt="">
+							<img src="public/assets/images/flag-siteblindade.png" alt="">
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+		<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="public/js/script.js"></script>
+	</body>
+
+</html>
