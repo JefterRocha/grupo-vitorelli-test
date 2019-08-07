@@ -241,15 +241,12 @@ nav .client-actions li:last-child i {
 	left: 50%;
 }
 
-#cartButton {
-	display: none;
-}
 
 .cart .cart-list {
 	display: none;
 	position: absolute;
-	right: 100%;
-	top: 200%;
+	right: 0;
+	top: 100%;
 	background-color: tomato;
 	flex-direction: column;
 	padding: 0 8px 8px;
@@ -293,7 +290,7 @@ nav .client-actions td.remove i {
 	font-size: 20px;
 }
 
-#cartButton:checked ~ .cart-list {
+li.cart:hover > .cart-list {
 	display: flex;
 }
 
@@ -592,8 +589,13 @@ footer .info ul li:first-child img {
 
 footer .info ul li img {
 	margin-right: 4px;
+	filter: grayscale(1);
 	transition: filter .2s linear;
 	cursor: pointer;
+}
+
+footer .info ul li img:hover {
+	filter: grayscale(0);
 }
 
 footer .info ul li img:first-child {
