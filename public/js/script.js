@@ -92,6 +92,9 @@ function addToCart(el) {
 	}
 
 	const totalPrice = cartList.products.reduce((prev, { amount, price }) =>  prev + (price * amount) , 0)
+	const totalItems = cartList.products.reduce((prev, { amount }) =>  prev + amount, 0)
+
+	$('.cart > span').text(totalItems.toString().padStart(2, '0'))
 
 	cartList.totalPrice = totalPrice
 
@@ -121,10 +124,16 @@ function addToCart(el) {
 function removeItem(el) {
 	const { parentElement } = el.target
 	const id = parentElement.parentElement.attributes[0].value
+
 	cartList.products = cartList.products.filter(product => product.id !== id)
 	parentElement.parentElement.outerHTML = ''
+
 	const totalPrice = cartList.products.reduce((prev, { amount, price }) =>  prev + (price * amount) , 0)
+	const totalItems = cartList.products.reduce((prev, { amount }) =>  prev + amount, 0)
+
 	cartList.totalPrice = totalPrice
+
+	$('.cart > span').text(totalItems.toString().padStart(2, '0'))
 	$('.cart-list-footer span:nth-child(2)').text(totalPrice.toLocaleString('pt-BR', currencyFormat))
 }
 
